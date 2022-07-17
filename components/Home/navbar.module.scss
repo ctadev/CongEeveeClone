@@ -14,7 +14,6 @@
   .top {
     width: 100%;
     overflow: hidden;
-    transition: all 0.8s ease;
     @include row_center;
     padding: 10px 10px 10px 20px;
     justify-content: space-between;
@@ -235,7 +234,7 @@
           text-transform: uppercase;
           width: fit-content;
           color: grey;
-          &:hover{
+          &:hover {
             color: white;
           }
         }
