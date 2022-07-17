@@ -139,5 +139,32 @@
         }
       }
     }
+
+    .pagination {
+      @include row_center;
+      padding-bottom: 1rem;
+      padding-top: 2rem;
+      .paginationBtns {
+        @include row_center;
+        gap: 2rem;
+        list-style: none;
+        a {
+          border-radius: 5px;
+          padding: 10px 15px;
+          border: 1px solid blueviolet;
+          cursor: pointer;
+          &:hover {
+            color: white;
+            background-color: rgb(242, 119, 198);
+          }
+        }
+      }
+      .paginationActive {
+        a {
+          color: white;
+          background-color: rgb(242, 119, 198);
+        }
+      }
+    }
   }
 }
