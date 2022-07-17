@@ -29,11 +29,15 @@
       }
     }
     .logo_container {
-      height: 50px;
-      width: 185px;
+      height: 35px;
+      width: 135px;
       position: relative;
       .logo {
         cursor: pointer;
+      }
+      @include responsive(small) {
+        height: 50px;
+        width: 185px;
       }
       @include responsive(tablet) {
         height: 82px;
