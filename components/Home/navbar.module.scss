@@ -1,0 +1,676 @@
+@use "../../styles/global_scss/" as *;
+
+.navbar {
+  background-color: #041c2c;
+  color: white;
+  position: relative;
+  @include column_center;
+  @include responsive(tablet) {
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 500;
+  }
+  .top {
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.8s ease;
+    @include row_center;
+    padding: 10px 10px 10px 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.411);
+    @include responsive(tablet) {
+      padding: 20px 10px 20px 20px;
+      max-width: 1100px;
+    }
+    .hamburger_menu {
+      cursor: pointer;
+      @include responsive(tablet) {
+        display: none;
+      }
+    }
+    .logo_container {
+      height: 50px;
+      width: 185px;
+      position: relative;
+      .logo {
+        cursor: pointer;
+      }
+      @include responsive(tablet) {
+        height: 82px;
+        width: 300px;
+      }
+    }
+    .right_side {
+      @include row_center;
+      gap: 0.5rem;
+      .search_container {
+        @include row_center;
+        border-radius: 5px;
+        border: 1px solid white;
+        padding: 10px 5px 10px 10px;
+        background-color: #0b3857;
+        display: none;
+        @include responsive(tablet) {
+          display: block;
+          @include row_center;
+        }
+        input {
+          border: none;
+          outline: none;
+          background: transparent;
+          display: block;
+          color: white;
+          font-size: 1rem;
+          animation: animate_search 0.2s forwards linear;
+        }
+        .search_icon {
+          cursor: pointer;
+        }
+      }
+      .cart_container {
+        position: relative;
+        cursor: pointer;
+        .cart_label {
+          position: absolute;
+          @include row_center;
+          right: -10px;
+          top: 0;
+          font-size: 0.8rem;
+          color: white;
+          background-color: #f277c6;
+          border-radius: 50%;
+          width: fit-content;
+          padding: 1px 5px;
+          cursor: pointer;
+        }
+      }
+      @keyframes animate_search {
+        0% {
+          width: 0;
+        }
+        100% {
+          width: 230px;
+        }
+      }
+    }
+
+    .right_side_hide {
+      @include row_center;
+      padding-right: 1rem;
+      .search_container {
+        display: none;
+        @include responsive(tablet) {
+          display: block;
+        }
+        input {
+          width: 0;
+          display: none;
+        }
+        .search_icon {
+          cursor: pointer;
+          margin-right: 15px;
+          margin-top: 4px;
+        }
+      }
+      .cart_container {
+        position: relative;
+        cursor: pointer;
+        .cart_label {
+          position: absolute;
+          @include row_center;
+          right: -10px;
+          top: 0;
+          font-size: 0.8rem;
+          color: white;
+          background-color: #f277c6;
+          border-radius: 50%;
+          width: fit-content;
+          padding: 1px 5px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .top.hide_top {
+    @include responsive(tablet) {
+      display: none;
+    }
+  }
+
+  .bottom {
+    background-color: white;
+    color: black;
+    position: fixed;
+    transition: all 0.8s ease;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    padding: 15px 10px 10px 10px;
+    transition: 0.3s all ease-in-out;
+    @include responsive(tablet) {
+      position: static;
+      background-color: #041c2c;
+      height: 62px;
+      max-width: 1100px;
+      @include row_center;
+      justify-content: space-between;
+    }
+    .close_container {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 17px;
+      background-color: #041c2c;
+      @include responsive(tablet) {
+        display: none;
+      }
+      .close_icon {
+        cursor: pointer;
+        color: pink;
+        font-size: 2rem;
+      }
+    }
+
+    ul {
+      @include responsive(tablet) {
+        @include row_center;
+        padding-top: 1rem;
+        gap: 2rem;
+        justify-content: flex-start;
+        color: white;
+      }
+      .mobile_search {
+        background-color: #0b3857;
+        width: 75%;
+        @include row_center;
+        justify-content: flex-start;
+        border: none;
+        border-radius: 5px;
+        @include responsive(tablet) {
+          display: none;
+        }
+        .search_container {
+          width: 100%;
+          @include row_center;
+          border: none;
+          position: relative;
+          border-radius: 5px;
+          @include responsive(tablet) {
+            display: none;
+          }
+          input {
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            height: 3rem;
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 35px;
+            font-size: 1.2rem;
+            &:focus {
+              border: 1px solid yellowgreen;
+            }
+          }
+          .search_icon {
+            position: absolute;
+            right: 5px;
+            cursor: pointer;
+          }
+        }
+      }
+      li {
+        list-style-type: none;
+        font-size: 1.8rem;
+        font-weight: 600;
+        padding-left: 0.5rem;
+        width: 75%;
+        margin-bottom: 1.5rem;
+        cursor: pointer;
+        @include responsive(tablet) {
+          font-size: 0.9rem;
+          text-transform: uppercase;
+          width: fit-content;
+          color: grey;
+          &:hover{
+            color: white;
+          }
+        }
+      }
+      .euc_list {
+        @include column_center;
+        align-items: flex-start;
+        @include responsive(tablet) {
+          width: min-content;
+          position: relative;
+        }
+        .info {
+          width: 100%;
+          @include responsive(tablet) {
+            width: fit-content;
+          }
+          .euc_mobile_container {
+            @include row_center;
+            justify-content: space-between;
+            @include responsive(tablet) {
+              display: none;
+            }
+            .icon {
+              cursor: pointer;
+              @include responsive(tablet) {
+                display: none;
+              }
+            }
+          }
+          .euc_tablet_container {
+            display: none;
+            @include responsive(tablet) {
+              display: block;
+              @include row_center;
+            }
+            span {
+              .arrow_icon {
+                padding-top: 8px;
+              }
+            }
+            .euc_dropdown_true {
+              @include row_center;
+            }
+          }
+        }
+        .euc_dropdown {
+          max-height: 200px;
+          transition: max-height 0.4s ease;
+          overflow: hidden;
+          width: 98vw;
+          max-width: 1100px;
+          color: black;
+          @include responsive(tablet) {
+            max-height: fit-content;
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            margin: auto;
+            border-bottom: 1px solid grey;
+            border-right: 1px solid grey;
+            border-left: 1px solid grey;
+            left: -10px;
+            right: 0;
+            top: 46px;
+            @include row_center;
+            gap: 0;
+            justify-content: flex-start;
+            align-items: flex-start;
+          }
+          @include responsive(Xtablet) {
+            gap: 1rem;
+          }
+          aside {
+            @include responsive(tablet) {
+              margin-right: 1rem;
+              @include column_center;
+              align-items: flex-start;
+              justify-content: flex-start;
+              padding-left: 10px;
+            }
+            h1 {
+              display: none;
+              @include responsive(tablet) {
+                display: block;
+                color: black;
+                font-size: 1.5rem;
+                margin-top: 1rem;
+              }
+            }
+            .firstp {
+              margin-top: 2rem;
+              @include responsive(tablet) {
+                margin-top: 0;
+              }
+            }
+            .all {
+              display: none;
+              @include responsive(tablet) {
+                display: block;
+                margin-bottom: 1rem;
+              }
+            }
+            p {
+              width: 100%;
+              font-size: 1.1rem;
+              opacity: 0.9;
+              color: grey;
+              cursor: pointer;
+              &:hover {
+                color: pink;
+              }
+              @include responsive(tablet) {
+                margin-top: 1rem;
+                font-size: 0.9rem;
+              }
+            }
+          }
+          div {
+            position: relative;
+            display: none;
+            transition: display 1s ease-in;
+            &:hover {
+              background-color: rgba(172, 171, 171, 0.253);
+            }
+            &:hover h5 {
+              display: block;
+              top: 40%;
+              animation: animateView 0.1s forwards linear;
+            }
+            @keyframes animateView {
+              0% {
+                top: 50%;
+              }
+              100% {
+                top: 40%;
+              }
+            }
+            .rating {
+              @include row_center;
+              .icon {
+                font-size: 1.3rem;
+                color: rgb(255, 146, 164);
+                @include responsive(tablet) {
+                  font-size: 1rem;
+                }
+              }
+            }
+            h5 {
+              display: none;
+              position: absolute;
+              font-size: 1rem;
+              color: white;
+              background-color: rgb(242, 119, 198);
+              padding: 15px 40px;
+              text-transform: uppercase;
+            }
+            @include responsive(tablet) {
+              display: block;
+              @include column_center;
+              padding: 40px 0 50px 0;
+              text-transform: none;
+              text-align: center;
+            }
+          }
+        }
+        .euc_dropdown.hide {
+          max-height: 0;
+          border: none;
+        }
+      }
+      .accessories_list {
+        @include column_center;
+        align-items: flex-start;
+        .info {
+          width: 100%;
+          @include responsive(tablet) {
+            width: fit-content;
+            position: relative;
+          }
+          .acce_mobile_container {
+            @include row_center;
+            justify-content: space-between;
+            @include responsive(tablet) {
+              display: none;
+            }
+            .icon {
+              cursor: pointer;
+              @include responsive(tablet) {
+                display: none;
+              }
+            }
+          }
+          .acce_tablet_container {
+            display: none;
+            @include responsive(tablet) {
+              display: inline;
+              @include row_center;
+            }
+            span {
+              .arrow_icon {
+                padding-top: 8px;
+              }
+            }
+            .acce_dropdown_true {
+              @include row_center;
+            }
+          }
+        }
+        .acce_dropdown {
+          max-height: 200px;
+          transition: max-height 0.4s ease;
+          overflow: hidden;
+          width: 98vw;
+          max-width: 1100px;
+          color: black;
+          @include responsive(tablet) {
+            border-bottom: 1px solid grey;
+            border-right: 1px solid grey;
+            border-left: 1px solid grey;
+            max-height: fit-content;
+            background-color: white;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 100%;
+            padding-right: 10px;
+            @include row_center;
+            gap: 0;
+            justify-content: flex-start;
+            align-items: flex-start;
+          }
+          @include responsive(Xtablet) {
+            gap: 1rem;
+          }
+          aside {
+            @include responsive(tablet) {
+              @include column_center;
+              align-items: flex-start;
+              justify-content: flex-start;
+              padding-left: 10px;
+            }
+            h1 {
+              width: 100%;
+              display: none;
+              @include responsive(tablet) {
+                display: block;
+                color: black;
+                font-size: 1.5rem;
+                margin-top: 1rem;
+              }
+            }
+            .firstp {
+              margin-top: 2rem;
+              @include responsive(tablet) {
+                margin-top: 0;
+              }
+            }
+            .all {
+              display: none;
+              @include responsive(tablet) {
+                display: block;
+                margin-bottom: 1rem;
+              }
+            }
+            p {
+              width: 100%;
+              font-size: 1.1rem;
+              opacity: 0.9;
+              color: grey;
+              cursor: pointer;
+              &:hover {
+                color: pink;
+              }
+              @include responsive(tablet) {
+                margin-top: 1rem;
+                font-size: 0.9rem;
+              }
+            }
+          }
+          div {
+            position: relative;
+            display: none;
+            transition: display 1s ease-in;
+            &:hover {
+              background-color: rgba(172, 171, 171, 0.253);
+            }
+            &:hover h5 {
+              display: block;
+              top: 40%;
+              animation: animateView 0.1s forwards linear;
+            }
+            @keyframes animateView {
+              0% {
+                top: 50%;
+              }
+              100% {
+                top: 40%;
+              }
+            }
+            .rating {
+              @include row_center;
+              .icon {
+                font-size: 1.3rem;
+                color: rgb(255, 146, 164);
+                @include responsive(tablet) {
+                  font-size: 1rem;
+                }
+              }
+            }
+            h5 {
+              display: none;
+              position: absolute;
+              font-size: 1rem;
+              color: white;
+              background-color: rgb(242, 119, 198);
+              padding: 15px 40px;
+              text-transform: uppercase;
+            }
+            @include responsive(tablet) {
+              display: block;
+              @include column_center;
+              text-transform: none;
+              text-align: center;
+              height: 350px;
+              width: 250px;
+            }
+          }
+        }
+        .acce_dropdown.hide {
+          max-height: 0;
+          border: none;
+        }
+      }
+    }
+
+    .search_and_cart {
+      .right_side {
+        @include row_center;
+        gap: 0.5rem;
+        color: white;
+        .search_container {
+          @include row_center;
+          border-radius: 5px;
+          border: 1px solid white;
+          padding: 10px 5px 10px 10px;
+          background-color: #0b3857;
+          display: none;
+          @include responsive(tablet) {
+            display: block;
+            @include row_center;
+          }
+          input {
+            border: none;
+            outline: none;
+            background: transparent;
+            display: block;
+            color: white;
+            font-size: 1rem;
+            animation: animate_search 0.2s forwards linear;
+          }
+          .search_icon {
+            cursor: pointer;
+          }
+        }
+        .cart_container {
+          position: relative;
+          cursor: pointer;
+          .cart_label {
+            position: absolute;
+            @include row_center;
+            right: -10px;
+            top: 0;
+            font-size: 0.8rem;
+            color: white;
+            background-color: #f277c6;
+            border-radius: 50%;
+            width: fit-content;
+            padding: 1px 5px;
+            cursor: pointer;
+          }
+        }
+        @keyframes animate_search {
+          0% {
+            width: 0;
+          }
+          100% {
+            width: 230px;
+          }
+        }
+      }
+
+      .right_side_hide {
+        color: white;
+        @include row_center;
+        .search_container {
+          display: none;
+          @include responsive(tablet) {
+            display: block;
+          }
+          input {
+            width: 0;
+            display: none;
+          }
+          .search_icon {
+            cursor: pointer;
+            margin-right: 15px;
+            margin-top: 4px;
+          }
+        }
+        .cart_container {
+          position: relative;
+          cursor: pointer;
+          .cart_label {
+            position: absolute;
+            @include row_center;
+            right: -10px;
+            top: 0;
+            font-size: 0.8rem;
+            color: white;
+            background-color: #f277c6;
+            border-radius: 50%;
+            width: fit-content;
+            padding: 1px 5px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .search_and_cart.hide {
+      display: none;
+    }
+  }
+
+  .bottom.hide {
+    left: -110%;
+  }
+}

@@ -1,0 +1,8 @@
+.banner{
+    position: relative;
+    height: 40VH;
+    width: 100%;
+    @media (min-width: 786px) {
+        height: 70VH;
+    }
+}

@@ -1,0 +1,66 @@
+@use "../../styles/global_scss/" as *;
+
+.footer {
+  background-color: #051c2c;
+  color: #3cdbc0;
+  @include row_center;
+  padding: 30px 20px 40px 15px;
+  .inner_container {
+    width: 100%;
+    max-width: 1100px;
+    @include column_center;
+    align-items: flex-start;
+    gap: 2rem;
+    @include responsive(tablet) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 1rem;
+    }
+    section {
+      h1 {
+        margin-bottom: 1rem;
+      }
+      p {
+        margin-bottom: 0.5rem;
+        opacity: 0.8;
+      }
+      .icon_container {
+        @include row_center;
+        justify-content: flex-start;
+        gap: 0.5rem;
+        .icons{
+          cursor: pointer;
+        }
+      }
+      .text_container {
+        width: 100%;
+        @include row_center;
+        input {
+          width: 85%;
+          height: 2.5rem;
+          border: none;
+          background-color: rgb(41, 40, 40);
+          padding-left: 10px;
+          color: white;
+          font-size: 1rem;
+          &:focus {
+            outline: 1px solid white;
+            border-radius: 3px;
+            width: 85%;
+          }
+        }
+        button {
+          width: 15%;
+          border: none;
+          height: 2.5rem;
+          background-color: #f277c6;
+          cursor: pointer;
+          .arrow {
+            color: white;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

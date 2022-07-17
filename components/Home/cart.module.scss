@@ -1,0 +1,140 @@
+@use "../../styles/global_scss/" as *;
+
+.carts {
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: all 0.5s ease;
+  height: 100vh;
+  width: 400px;
+  z-index: 5000;
+  background-color: rgb(255, 255, 255);
+  .title {
+    position: relative;
+    @include row_center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid grey;
+    h1 {
+      text-transform: uppercase;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 0.5rem 0;
+    }
+    .close {
+      position: absolute;
+      right: 10px;
+      cursor: pointer;
+    }
+  }
+
+  .cart_list {
+    height: max-content;
+    max-height: 80%;
+    margin: auto;
+    overflow-y: auto;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    .empty_cart{
+      @include row_center;
+      gap: 0.5rem;
+      h1{
+        font-weight: lighter;
+      }
+    }
+
+    .cart_item {
+      width: 100%;
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: space-between;
+      .big_image_container {
+        position: relative;
+        height: 100px;
+        width: 100px;
+      }
+
+      .cart_quantities {
+        @include column_center;
+        gap: 1rem;
+        h2 {
+          font-size: 1rem;
+          font-weight: 600;
+          text-align: center;
+        }
+        aside {
+          @include row_center;
+          gap: 1rem;
+          font-weight: lighter;
+          .icon {
+            font-size: 1.7rem;
+            padding: 2px 5px;
+            &:hover {
+              background-color: grey;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      .cart_delete {
+        @include column_center;
+        align-items: flex-end;
+        gap: 1rem;
+        .delete_icon {
+          cursor: pointer;
+        }
+        .price_container {
+          @include row_center;
+          gap: 0.5rem;
+          p {
+            opacity: 0.7;
+            font-size: 0.7rem;
+          }
+          .special_price {
+            color: rgb(42, 185, 241);
+          }
+          .strike_through {
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+  }
+
+  .cart_price {
+    @include column_center;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+    border-top: 1px solid grey;
+    .cart_total_quantity {
+      @include row_center;
+      justify-content: space-between;
+      width: 100%;
+      h3 {
+        font-weight: 600;
+      }
+      h4 {
+        font-weight: 600;
+      }
+    }
+    button {
+      width: 100%;
+      height: 2.7rem;
+      cursor: pointer;
+      background-color: #f277c6;
+      border: none;
+      border-radius: 5px;
+      @include row_center;
+      gap: 0.5rem;
+      color: white;
+      font-size: 1rem;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+.carts.hide {
+  right: -100%;
+}
