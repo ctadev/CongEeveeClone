@@ -6,7 +6,7 @@ import { runFireworks } from "../../lib/utils";
 import { useDispatch } from "react-redux";
 import { clearCart } from "../../redux/slices/cart";
 
-const home = () => {
+export default function Home() {
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -30,5 +30,3 @@ const home = () => {
     </main>
   );
 };
-
-export default home;
