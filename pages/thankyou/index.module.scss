@@ -1,0 +1,46 @@
+@use "../../styles/global_scss/" as *;
+
+.thankyou {
+  @include row_center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  height: 50vh;
+  min-height: 300px;
+  section {
+    width: 90%;
+    background-color: rgba(128, 128, 128, 0.308);
+    max-width: 800px;
+    padding: 2rem;
+    border-radius: 10px;
+    @include column_center;
+    @include responsive(Xmedium) {
+      width: 60%;
+    }
+    .icon {
+      color: rgb(17, 187, 17);
+      font-size: 2rem;
+    }
+    h1 {
+      color: rgb(144, 144, 231);
+      margin-top: 1rem;
+      text-align: center;
+    }
+    p {
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    button {
+      width: 250px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      padding: 10px 5px;
+      text-transform: uppercase;
+      color: white;
+      background-color: rgb(230, 55, 55);
+      border: none;
+      border-radius: 7px;
+    }
+  }
+}

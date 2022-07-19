@@ -14,3 +14,9 @@ $breakpoints: (
     @content;
   }
 }
+
+@mixin responsiveHeight($size) {
+  @media (min-height: map-get($breakpoints, $size)) {
+    @content;
+  }
+}

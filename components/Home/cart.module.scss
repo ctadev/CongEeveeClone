@@ -9,7 +9,6 @@
   width: 280px;
   z-index: 5000;
   background-color: rgb(255, 255, 255);
-  @include column_center;
   @include responsive(small) {
     width: 370px;
   }
@@ -37,11 +36,15 @@
   }
 
   .cart_list {
-    height: max-content;
+    height: fit-content;
+    max-height: 50%;
     margin: auto;
     overflow-y: auto;
     padding-bottom: 2rem;
     padding-top: 1rem;
+    @include responsiveHeight(Xmedium) {
+      max-height: 80%;
+    }
     .empty_cart {
       @include row_center;
       gap: 0.5rem;
