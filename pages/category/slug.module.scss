@@ -1,7 +1,7 @@
 @use "../../styles/global_scss/" as *;
 
 .details {
-  @include row_center;
+  @include column_center;
   .inner_container {
     width: 100%;
     max-width: 1100px;
@@ -234,6 +234,41 @@
 
         .desc_details_container.hide {
           height: 250px;
+        }
+      }
+    }
+  }
+
+  .suggestions {
+    max-width: 1100px;
+    background-color: aquamarine;
+    .like_wrapper {
+      position: relative;
+      height: 400px;
+      width: 100%;
+      overflow-x: hidden;
+      .item_container {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+        .track {
+          position: absolute;
+          white-space: nowrap;
+          will-change: transform;
+          animation: marquee 15s linear infinite;
+          width: 180%;
+          &:hover {
+            animation-play-state: paused;
+          }
+        }
+      }
+      @keyframes marquee {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-50%);
         }
       }
     }

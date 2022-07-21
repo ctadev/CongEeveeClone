@@ -203,6 +203,17 @@ const ProductDetails = ({ product, allProducts }) => {
           </div>
         </section>
       </div>
+      {/* <aside className={s.suggestions}>
+        <div className={s.like_wrapper}>
+          <div className={`${s.item_container} ${s.track}`}>
+              {allProducts.map((item) => (
+                <div key={item._id}>
+                  test
+                </div>
+              ))}
+          </div>
+        </div>
+      </aside> */}
       <Toaster />
     </main>
   );
