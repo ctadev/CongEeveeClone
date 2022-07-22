@@ -26,7 +26,7 @@ const NavBar = () => {
   const cart = useSelector((state) => state.cartSlice);
 
   function navscroll() {
-    if (window.scrollY > 50) {
+    if (window.scrollY > 80) {
       setNavFixed(true);
     } if (window.scrollY == 0) {
       setNavFixed(false);
