@@ -26,9 +26,10 @@ const NavBar = () => {
   const cart = useSelector((state) => state.cartSlice);
 
   function navscroll() {
-    if (window.scrollY > 80) {
+    if (window.scrollY > 100) {
       setNavFixed(true);
-    } if (window.scrollY == 0) {
+    }
+    if (window.scrollY == 0) {
       setNavFixed(false);
     }
   }
@@ -433,9 +434,7 @@ const NavBar = () => {
               className={s.cart_container}
               onClick={() => dispatch(toggleModal())}
             >
-              <ShoppingCartOutlinedIcon
-                className={s.cart_icon}
-              />
+              <ShoppingCartOutlinedIcon className={s.cart_icon} />
               {cart.cartTotalQuantity > 0 && (
                 <label className={s.cart_label}>{cart.cartTotalQuantity}</label>
               )}
