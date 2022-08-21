@@ -182,7 +182,7 @@ const NavBar = () => {
               </aside>
               <div onClick={() => dropDownNavigation("inmotion-v11")}>
                 <Image
-                  src="https://cdn.shopify.com/s/files/1/0470/9682/3967/products/inmotion-v11-2021-version-euc-967_1024x1024.png?v=1637019143"
+                  src="https://cong-eevee-clone.vercel.app/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fr0ycjkx1%2Fproduction%2Fcb82ddd837224353b27657d363aadaf739ee8844-480x480.webp&w=1920&q=75"
                   alt=""
                   height={200}
                   width={200}
@@ -201,7 +201,7 @@ const NavBar = () => {
               </div>
               <div onClick={() => dropDownNavigation("veteran-sherman-max")}>
                 <Image
-                  src="https://cdn.shopify.com/s/files/1/0470/9682/3967/products/5_ffe7e13a-fafb-479a-9e57-0076484b61c2_1024x1024.png?v=1647034462"
+                  src="https://cong-eevee-clone.vercel.app/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fr0ycjkx1%2Fproduction%2F3371f7a1ac0a532d5fb692d9381da2a9d6c3f7dd-480x480.webp&w=1920&q=75"
                   alt=""
                   height={200}
                   width={200}
@@ -224,7 +224,7 @@ const NavBar = () => {
                 }
               >
                 <Image
-                  src="https://cdn.shopify.com/s/files/1/0470/9682/3967/products/DSC05517_web_93bba493-21ee-49ff-869e-cce07b066d50_480x.png?v=1647034601"
+                  src="https://cong-eevee-clone.vercel.app/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fr0ycjkx1%2Fproduction%2F48eb37f9d2479682ebf4fd2711115f3f0ad27233-480x480.webp&w=1920&q=75"
                   alt=""
                   height={200}
                   width={200}
@@ -243,7 +243,7 @@ const NavBar = () => {
               </div>
               <div onClick={() => dropDownNavigation("king-song-s22-eagle")}>
                 <Image
-                  src="https://cdn.shopify.com/s/files/1/0470/9682/3967/products/king-song-s20-eagle-euc-766_480x.png?v=1637020346"
+                  src="https://cong-eevee-clone.vercel.app/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fr0ycjkx1%2Fproduction%2F0d931278f4bd7ae6d968941ff9c77633143f0228-480x480.webp&w=1920&q=75"
                   alt=""
                   height={200}
                   width={200}

@@ -5,6 +5,7 @@ module.exports = {
       "eevees.com",
       "cdn.sanity.io",
       "upstream.production.splitit.com",
+      "cong-eevee-clone.vercel.app",
     ],
   },
 };
