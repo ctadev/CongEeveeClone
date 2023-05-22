@@ -33,7 +33,7 @@ const Cart = () => {
       headers: {
         "Content-Type": "application/json",
       },
-      body:  JSON.stringify(cart),
+      body: JSON.stringify(cart),
     });
 
     if (response.statusCode === 500) return;

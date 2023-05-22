@@ -75,7 +75,7 @@ const Category = () => {
             >
               <Image
                 alt=""
-                src="https://cdn.shopify.com/s/files/1/0470/9682/3967/products/Mi_Portable_Air_Pump_1024x1024.png?v=1615259209"
+                src="https://cdn.shopify.com/s/files/1/0470/9682/3967/products/XiaomiMiAirCompressorPump_360x.jpg?v=1673384021"
                 layout="fill"
                 objectFit="cover"
               />
@@ -138,7 +138,7 @@ const Category = () => {
               <div className={s.acce_container}>
                 <Image
                   alt=""
-                  src="https://cdn.shopify.com/s/files/1/0470/9682/3967/products/Mi_Portable_Air_Pump_480x.png?v=1615259209"
+                  src="https://cdn.shopify.com/s/files/1/0470/9682/3967/products/XiaomiMiAirCompressorPump_360x.jpg?v=1673384021"
                   layout="fill"
                   objectFit="contain"
                 />
