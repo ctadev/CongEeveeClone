@@ -23,7 +23,7 @@ const Category = () => {
             <div className={s.image_container}>
               <Image
                 alt=""
-                src="https://cdn.shopify.com/s/files/1/0470/9682/3967/collections/DSC05517_720x.png?v=1607315074"
+                src="https://cong-eevee-clone.vercel.app/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fr0ycjkx1%2Fproduction%2F56a0bd1afc2d9cdb095c8914e61600ebb4437061-720x720.webp&w=1920&q=75"
                 layout="fill"
                 objectFit="contain"
               />
@@ -35,7 +35,7 @@ const Category = () => {
             <div className={s.image_container}>
               <Image
                 alt=""
-                src="https://cdn.shopify.com/s/files/1/0470/9682/3967/collections/scooter_web_720x.png?v=1607319212"
+                src="https://cong-eevee-clone.vercel.app/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fr0ycjkx1%2Fproduction%2F7d482b6c9884d534c82f84ce497af7f9a9de80e8-480x480.webp&w=1920&q=75"
                 layout="fill"
                 objectFit="contain"
               />
@@ -47,7 +47,7 @@ const Category = () => {
             <div className={s.image_container}>
               <Image
                 alt=""
-                src="https://cdn.shopify.com/s/files/1/0470/9682/3967/collections/eskate_web_720x.png?v=1607314644"
+                src="https://cong-eevee-clone.vercel.app/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fr0ycjkx1%2Fproduction%2F352bb99a8cbe312614d187715eb6b24de6fcae1e-480x480.webp&w=1920&q=75"
                 layout="fill"
                 objectFit="contain"
               />
@@ -59,7 +59,7 @@ const Category = () => {
             <div className={s.image_container}>
               <Image
                 alt=""
-                src="https://cdn.shopify.com/s/files/1/0470/9682/3967/collections/pint_web_720x.png?v=1607319050"
+                src="https://cong-eevee-clone.vercel.app/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fr0ycjkx1%2Fproduction%2Fc05cc6cfe928386dd48edefc91dd1e65f39fc7ef-480x480.webp&w=1920&q=75"
                 layout="fill"
                 objectFit="contain"
               />
@@ -75,7 +75,7 @@ const Category = () => {
             >
               <Image
                 alt=""
-                src="https://cdn.shopify.com/s/files/1/0470/9682/3967/products/XiaomiMiAirCompressorPump_360x.jpg?v=1673384021"
+                src="https://cong-eevee-clone.vercel.app/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fr0ycjkx1%2Fproduction%2Ff1de867dc823bf13379fdd76edb2bf40c25db1e3-480x480.webp&w=1920&q=75"
                 layout="fill"
                 objectFit="cover"
               />
@@ -93,7 +93,7 @@ const Category = () => {
               <div className={s.acce_container}>
                 <Image
                   alt=""
-                  src="https://cdn.shopify.com/s/files/1/0470/9682/3967/products/NavyLazyrollingHoodie_480x.png?v=1647378231"
+                  src="https://cong-eevee-clone.vercel.app/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fr0ycjkx1%2Fproduction%2F8911ad831031ad0758ad4c7d3fc37715dcfe942b-480x480.webp&w=1920&q=75"
                   layout="fill"
                   objectFit="contain"
                 />
@@ -105,7 +105,7 @@ const Category = () => {
               <div className={s.acce_container}>
                 <Image
                   alt=""
-                  src="https://cdn.shopify.com/s/files/1/0470/9682/3967/products/TSG_Evolution_Satin_Black_Front_480x.png?v=1618440551"
+                  src="https://cong-eevee-clone.vercel.app/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fr0ycjkx1%2Fproduction%2F39340404170f538e979e1828de369384645b5ea9-480x480.webp&w=1920&q=75"
                   layout="fill"
                   objectFit="contain"
                 />
@@ -121,7 +121,7 @@ const Category = () => {
               <div className={s.acce_container}>
                 <Image
                   alt=""
-                  src="https://cdn.shopify.com/s/files/1/0470/9682/3967/products/TSGPassProMattBlackRightAngle_480x.png?v=1647648095"
+                  src="https://cong-eevee-clone.vercel.app/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fr0ycjkx1%2Fproduction%2F94d903e5d4c6fe53b20074ce2f1fd5698200190f-480x480.webp&w=1920&q=75"
                   layout="fill"
                   objectFit="contain"
                 />
@@ -138,7 +138,7 @@ const Category = () => {
               <div className={s.acce_container}>
                 <Image
                   alt=""
-                  src="https://cdn.shopify.com/s/files/1/0470/9682/3967/products/XiaomiMiAirCompressorPump_360x.jpg?v=1673384021"
+                  src="https://cong-eevee-clone.vercel.app/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fr0ycjkx1%2Fproduction%2F6cefc977b40b83bb5e1cd2323fa146cb366889ec-480x480.webp&w=1920&q=75"
                   layout="fill"
                   objectFit="contain"
                 />
