@@ -329,7 +329,7 @@ const NavBar = () => {
                 }
               >
                 <Image
-                  src="https://cdn.shopify.com/s/files/1/0470/9682/3967/products/TSGPassProMattBlackRightAngle_480x.png?v=1647648095"
+                  src="https://cong-eevee-clone.vercel.app/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fr0ycjkx1%2Fproduction%2F94d903e5d4c6fe53b20074ce2f1fd5698200190f-480x480.webp&w=1920&q=75"
                   alt=""
                   height={200}
                   width={200}
@@ -352,7 +352,7 @@ const NavBar = () => {
                 }
               >
                 <Image
-                  src="https://cdn.shopify.com/s/files/1/0470/9682/3967/products/Mi_Portable_Air_Pump_480x.png?v=1615259209"
+                  src="https://cong-eevee-clone.vercel.app/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fr0ycjkx1%2Fproduction%2F6cefc977b40b83bb5e1cd2323fa146cb366889ec-480x480.webp&w=1920&q=75"
                   alt=""
                   height={200}
                   width={200}
@@ -375,7 +375,7 @@ const NavBar = () => {
                 }
               >
                 <Image
-                  src="https://cdn.shopify.com/s/files/1/0470/9682/3967/products/NavyLazyrollingHoodie_480x.png?v=1647378231"
+                  src="https://cong-eevee-clone.vercel.app/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fr0ycjkx1%2Fproduction%2Fd28637c3332faf6efb92ae255b0fe8917f6b5d90-480x480.webp&w=1920&q=75"
                   alt=""
                   height={200}
                   width={200}
@@ -396,7 +396,7 @@ const NavBar = () => {
                 onClick={() => dropDownNavigation2("tsg-all-terrain-kneepads")}
               >
                 <Image
-                  src="https://cdn.shopify.com/s/files/1/0470/9682/3967/products/TSG-All-Terrain_Kneepads-Front_375600b7-60ad-4d7a-a77d-c1cb5eb98426_480x.png?v=1618440515"
+                  src="https://cong-eevee-clone.vercel.app/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fr0ycjkx1%2Fproduction%2Fc3509c708e76d54905aaaf147471b785a8296c98-480x480.webp&w=1920&q=75"
                   alt=""
                   height={200}
                   width={200}
